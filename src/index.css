@@ -992,6 +992,26 @@ nav {
 }
 
 /* ==========================================
+   FORM GRID (Add/Edit Animal)
+   ========================================== */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 16px;
+}
+
+.form-full-width {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================
    HOME PAGE
    ========================================== */
 
